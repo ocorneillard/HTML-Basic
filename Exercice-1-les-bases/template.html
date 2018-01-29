@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel='stylesheet' href='template.css'>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a class="active" href="#home">Les bases de l'html</a></li>
+      <li><a href="#balise1">Les balises</a></li>
+      <li><a href="#contact">Les attributs</a></li>
+      <li><a href="#about">Différence entre inline et block</a></li>
+      <li><a href="#">Le Markdown et l'html</a></li>
+    </ul>
+    
+  </nav>
+  <div class='grid'>
+    <div class='box A'>
+      <h2 class='balise1'>Les balises</h2>
+                      <!-- Balise paire  -->
+      <h3>Les balises paires</h3>
+      <h4> <em>Qu'est-ce qu'une balise paire ?</em> </h4>
+      <p>
+        Une paire de balise est constituée d'une balise ouvrante et d'une balise fermante.
+        Ces deux balises doivent être constituées d'un contenu. <br /><strong> L'objectif est donc de donner
+        un sens au contenu grâce aux balises</strong>.
+        Il est important de différencier les <em>balises</em> des <em>éléments</em>. <br />
+        Pour en savoir plus <a href='http://www.perdu.com'>cliquez ici</a>
+      </p>
+                    <!-- Explication de l'image -->
+      <img src='http://www.pierre-giraud.com/html-css/cours-complet/imgs/element-p-exemple-html.png' width='400px' height='95px'>
+      <p>      <em> Dans l'exemple ci-dessus, que nous retrouvons sur
+         <a href='http://www.pierre-giraud.com/html-css/cours-complet/elements-balises-attributs-html.php'> le site de Pierre Giraud</a>,
+         on indique que le contenu "Je suis un paragraphe" est
+         un paragraphe grâce aux deux balises &lt;p&gt; et &lt;/p&gt;. </em>
+         <br />
+         Mes sources : <a href='http://www.pierre-giraud.com'>Pierre Giraud</a>,
+                       <a href='https://www.w3schools.com'> W3 schools</a>,
+                       <a href='http://www.codecacademy.com/fr'> Codecacademy</a>.
+      </p>
+
+    </div>
+    <div class='box B'>
+                   <!-- Unordered list (5 points) sur les balises paires -->
+      <h4><em> Quelques exemples de balises dites paires : </em></h4>
+      <ul>
+        <li> La balise ouvrante <mark>&lt;!--</mark>
+         et la balise fermante <mark>--&gt;</mark>. <br />
+         Elles permettent d'écrire des commentaires dans le code, sans l'afficher
+         sur la page, très utile pour améliorer la lisibilité de son code. N'hésite pas à regarde la page source
+         pour voir deux trois exemples !
+         <pre>&lt;!-- Ceci est un commentaire --&gt;</pre></li> <br />
+
+        <li> Les titres allant de <mark>h1</mark> à <mark>h6</mark> :
+          <pre>&lt;h1&gt; &lt;/h1&gt;</pre>
+          <pre>&lt;h2&gt; &lt;/h2&gt;</pre>
+          <pre>&lt;h3&gt; &lt;/h3&gt;</pre>
+          etc</li><br />
+        <li> Les balises obligatoires en HTML /!\, elles sont toujours disposées de cette manière :
+          <pre>&lt;html&gt;</pre>
+          <pre>  &lt;head&gt; &lt;/head&gt;</pre>
+          <pre>  &lt;body&gt; &lt;/body&gt;</pre>
+          <pre>&lt;/html&gt;<pre> </li> <br />
+        <li> Les balises permettant d'afficher un lien :
+          <pre>&lt;a href='http://www.perdu.com'&gt; Mon site &lt;/a&gt;  </pre> </li> <br />
+
+        <li> Les balises pour les listes, attention, les balises <mark>&lt;li&gt; &lt;/li&gt;</mark>
+         sont toujours entre <mark>&lt;ul&gt; &lt;/ul&gt;</mark>  :
+         <pre>&lt;ul&gt;</pre>
+         <pre>  &lt;li&gt; &lt;/li&gt; </pre>
+         <pre>&lt;/ul&gt;</pre> </li>
+      </ul> <br />
+    </div>
+
+    <div class='box C'>
+                    <!-- Unordered list (3) sur les balises orphelines -->
+      <h3>Les balises orphelines</h3>
+      <p>Une balise orpheline n'a pas besoin qu'on la referme, puisqu'une seule balise suffit à lui
+      donner du sens.</p>
+      <ul>
+        <li>Pour passer à la ligne, on utilise <mark>br</mark> : <br />
+        <pre> &lt;br&gt; ou &lt;br /&gt; </pre> </li>
+
+        <li>Pour insérer une image, on utilise img : <br />
+        <pre> &lt;img src="URL" alt=""&gt; ou &lt;img src="URL" alt="" /&gt;</pre></li>
+        <li>La balise <mark>meta</mark>, très utile : <br />
+        <pre>&lt;meta charset="utf-8"&gt;</pre> indispensable pour écrire en français (accent, é à è, etc) </li>
+      </ul>
+    </div>
+    <div class='box D'>
+                                    <!-- Attributs -->
+      <h2>Les attributs</h2>
+        <p> Les attributs permettent de donner plus d'informations quant à l'élément donné.
+        Ils sont indispensables pour qu'il y ait un lien disponible sur la page, par exemple : <br />
+        <pre>&lt;a <mark>href="lelien.com"</mark>&gt;Cliquez ici &lt;/a&gt;</pre>
+        href="lelien" donnera comme information l'URL de la page qu'on cherche à voir. <br />
+        Les attributs sont nécessaires pour avoir des images, des vidéos, des liens, des éléments liés au font de la page et surtout pour permettre d'apporter
+        de la structure à la page (en CSS) grâce au class, ID, etc. <br />
+        Mes sources : <a href='http://www.pierre-giraud.com'>Pierre Giraud</a>,
+            <a href='https://www.w3schools.com'> W3 schools</a>.
+        </p>
+    </div>
+    <div class='box E'>
+            <!-- Diff entre inline et block -->
+      <h2>La différence entre inline et block</h2>
+      <p> En HTML, un élément peut soit être de type <mark>block</mark>, soit de type <mark>inline</mark>. Le type de l'élément détermine
+      si l'élément retourne à la page ou non mais aussi s'ils prendront toute la largeur de la page !
+      De plus, grâce au type de l'élément, certaines propriétés CSS s'appliqueront différemment. Le type block
+      (comme &lt;p&gt; &lt;/p&gt;) retournera
+      toujours à la ligne, tandis que le type inline (comme &lt;strong&gt; &lt;/strong&gt;) ne changera rien à la structure du texte, même si certaines propriétés pourront
+      être appliqués seulement à cet élément. Comme tu l'auras compris, ils sont très important et sont le fondement même d'HTML !</p>
+
+    </div>
+    <div class='box F'>
+            <!-- inline (3) -->
+      <ul>
+        <li> Quelques exemples d'éléments de type inline : </li>
+        <li>
+          <pre> &lt;strong&gt; &lt;/strong&gt; </pre>
+          <pre> &lt;em&gt; &lt;/em&gt; </pre>
+          <pre> &lt;mark&gt; &lt;/mark&gt;</pre>
+          Ces éléments permettent de mettre <strong>en gras</strong>, de <em>mettre en italique</em>
+          ou <mark>de surligner</mark> un texte. Comme tu peux le voir, pas de retour à la ligne, et
+          heureusement d'ailleurs ! <br /> <br />
+        </li>
+        <li> l'élément <code>a</code>, permettant d'afficher un lien, est aussi inline, en voilà <a href="hhtp://www.perdu.com">un exemple</a> !</li> <br />
+        <li> l'élément <code>img</code> </li>
+      <br />
+    </div>
+
+    <div class='box G'>
+            <!-- block (3) -->
+      <li> Quelques exemples d'éléments de type block : <br /> <br />
+       <ul>
+         <li>Très utilisé <code>&lt;p&gt; &lt;/p&gt;</code> retournera à la ligne et occupera toute la largeur de la page</li> <br />
+         <li>Les listes <code>&lt;ul&gt; &lt;/ul&gt; ou &lt;ol&gt; &lt;/ol&lt;</code> (unordered list ou ordered list)</li> <br />
+         <li>Les <code>&lt;div&gt; &lt;/div&gt;</code> très importantes pour structurer certaines parties du code HTML en CSS.</li> <br />
+       </ul>
+      </li>
+      </ul>
+    </div>
+    <div class='box H'>
+            <!-- Markdown et HTML -->
+      <h2>Le markdown et l'HTML</h2>
+      <p>Le markdown est utilisé pour faciliter l'HTML, pour éditer plus facilement son texte
+      sur un forum, ou autre. Rien que pour faire une liste, en markdown, il ne faut qu'une * en début de ligne,
+      ce qui permet d'être plus rapide que :
+
+       <pre>&lt;ul&gt;</pre>
+       <pre>  &lt;li&gt;   &lt;/li&gt;</pre>
+       <pre>&lt;/ul&gt;</pre>
+      Voici quelques comparaisons, pour apprendre peu à peu le markdown : <br />
+      </p>
+    </div>
+    <div class='box I'>
+    </div>
+    <div class='box J'>J </div>
+    <div class='box K'>K </div>
+    <div class='box L'>L </div>
+  </div>
+</body>
+</html>
