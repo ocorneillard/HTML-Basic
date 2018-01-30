@@ -1,6 +1,19 @@
 body {
-  background-color : rgb(83,132,153);
+  background-color : rgb(71,69,71);
   margin : 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+mark {
+  border-radius : 24px;
+  background-color; white;
+}
+
+h1 {
+  padding-top : 5%;
+  padding-left : 10%;
+  color: rgb(179,179,179);
+  text-decoration: underline;
 }
 
 ul {
@@ -10,11 +23,11 @@ padding: 0;
 }
 nav {
   width: 15%;
-  height: 100%;
+  height: 90%;
   margin-top: 0;
   position: fixed;
   overflow: auto;
-  background-color: rgb(83,132,153);
+  background-color: rgb(71,69,71);
 }
 
 li a {
@@ -38,83 +51,131 @@ li a:hover:not(.active) {
     border-radius: 10px;
 }
 
+.grid a {
+    text-decoration : none;
+    color: rgb(34,34,34);
+    font-weight: bold;
+}
 
+.grid a.active {
 
+}
 .grid {
 display : grid;
 position: relative;
 max-width: 100%;
 margin-left: 15.5%;
+margin-right: 1%;
 margin-top: 10%;
 grid-gap: 10px;
 grid-template: repeat(12, auto) / repeat(6,1fr);
+color: rgb(89,86,89);
 }
 
 .box {
   border-radius: 10px;
-  padding : 5%;;
+  padding : 3%;
+  text-align: center;
 }
 
 .A {
  background-color: rgb(172,194,204);
  grid-area: 1 / 1 / 3 / 7;
- text-align: center;
+ color: rgb(89,86,89);
 }
 
+.boxp {
+  margin-left : 5%;
+  text-align: left;
+}
 .B {
-  background-color: rgb();
+  background-color: rgb(83,132,153);
   grid-area: 3 / 1 / 5 / 4;
+  color: rgb(89,86,89);
 }
 
 .C {
-  background-color: dodgerblue;
+  background-color: rgb(83,132,153);
   grid-area: 3 / 4 / 5 / 7;
+  color: rgb(89,86,89);
+
 }
 
 .D {
-  background-color: dodgerblue;
   grid-area: 5 / 1 / 7 / 7;
   text-align: center;
+  background-color: rgb(172,194,204);
+  color: rgb(89,86,89);
 }
 
 .E {
-  background-color: beige;
+  background-color: rgb(83,132,153);
   grid-area: 7 / 1 / 9 / 7;
   text-align: center;
+  color: rgb(89,86,89);
+
 }
 
 .F {
-  background-color: dodgerblue;
+  background-color: rgb(172,194,204);
   grid-area: 9 / 1 / 11 / 4;
+  color: rgb(89,86,89);
 }
 
 .G {
-  background-color: beige;
+  background-color: rgb(172,194,204);
   grid-area: 9 / 4 / 11 / 7;
+
 }
 
 .H {
-  background-color: dodgerblue;
   grid-area: 11 / 1 / 13 / 7;
   text-align: center;
+  background-color: rgb(83,132,153);
 }
 
 .I {
-  background-color: beige;
+  background-color: rgb(83,132,153);
   grid-area: 13 / 1 / 15 / 3;
+  text-align: center;
 }
 
 .J {
-  background-color: dodgerblue;
+  background-color: rgb(172,194,204);
   grid-area: 13 / 3 / 15 / 5;
+  text-align: center;
 }
 
 .K {
-  background-color: beige;
+  background-color: rgb(83,132,153);
   grid-area: 13 / 5 / 15 / 7;
+  text-align: center;
 }
 
 .L {
-  background-color: dodgerblue;
+  background-color: rgb(83,132,153);
   grid-area: 15 / 1 / 17 / 7;
+}
+
+
+.gridbot {
+  display : grid;
+  position:relative;
+  grid-template: repeat(3, 1fr) / repeat(3, 1fr) ;
+}
+
+.boxb {
+  background-color: white;
+  text-align: inherit;
+  border-radius: 10px;
+  border : 2px solid;
+}
+
+/* Animation */
+
+@keyframes slidein {
+  from {opacity: 0;}
+  to {opacity:50%;}
+  from {left: -240px;}
+  to {left:0px;}
 }
