@@ -1,0 +1,283 @@
+
+body {
+  text-align: center;
+  margin : 0px;
+  font-family: 'Acme', sans-serif;
+  min-width: 800px;
+}
+
+.anim {
+  position:fixed;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.cine {
+  position: fixed;
+  width: 100%;
+  height: 15%;
+  background-color: black;
+
+  animation-name: tarantino;
+  animation-duration: 9s;
+  animation-delay: 0s;
+}
+
+.ma {
+  position: fixed;
+  width: 100%;
+  height: 15%;
+  background-color: black;
+  bottom: 0;
+  animation-name: tarant ;
+  animation-duration: 9s;
+  animation-delay: 0s;
+}
+@keyframes tarant {
+  0% {bottom:-15%;}
+  100% {bottom:0%;}
+}
+
+@keyframes tarantino {
+  0% {top:-15%;}
+  100%{top: 0%;}
+}
+
+
+.quatre {
+  position:fixed;
+  top: 50%;
+  left: 45%;
+  animation-name: incoming;
+  animation-duration: 1s;
+  animation-delay: 0s;
+  animation-timing-function: cubic-bezier(.7,.07,.36,1.23);
+}
+
+@keyframes incoming {
+  0% {
+    left:0%;
+    transform: rotate(-40deg);}
+  85% {left:47%;transform: rotate(29deg);}
+  100% {left:45%;transform: rotate(0deg);}
+}
+.zéro {
+  position:fixed;
+  top: 50%;
+  left:48%;
+  animation-name: falling;
+  animation-duration: 1.5s;
+  animation-delay: 0s;
+  animation-timing-function: cubic-bezier(.39,.49,.23,1.27);
+}
+
+@keyframes falling {
+  0% {top:20%;left:0%;transform: rotate(-90deg);}
+  30% {top:15%;transform: rotate3d(0,1,0,0deg);}
+  45% {top:12%;transform:rotate3d(0,1,0 0deg);}
+  60% {top:10%;transform: rotate3d(0,1,0 60deg);}
+  65% {top:10%;transform: rotate3d(0,1,0 0deg);}
+  80% {top:52%;transform: rotate3d(0,1,0,-60deg), scaleY(0.5)}
+  100% {top:50%;transform: rotate3d(0,0,1,60deg);}
+}
+
+.ertauq {
+  position:fixed;
+  top: 50%;
+  left: 51%;
+  animation-name: perspective;
+  animation-duration: 5s;
+  animation-delay: 0s;
+}
+
+@keyframes perspective {
+  0% {transform: scale(0.1);top:51%;}
+  5% {top:49%;}
+  10% {top:51%;}
+  15% {top:49%;}
+  20% {top:55%;transform: scaleY(1);}
+  30% {top:53%;transform: scaleY(0.1);}
+  40% {top:53%;}
+  45% {top:53%;}
+  50% {top:49%;}
+  60% {top:51%;}
+  70% {top:49%;}
+  80% {top:51%;}
+  90% {top:50%;transform: scale(1);}
+
+}
+
+.n {
+  position:fixed;
+  top: 50%;
+  left: 56%;
+  animation-name: disparition;
+  animation-duration: 3s;
+}
+
+@keyframes disparition {
+  0% {opacity:0;}
+  86% {opacity:0;}
+  100% {opacity:1;}
+}
+.o {
+  position:fixed;
+  top: 50%;
+  left: 58%;
+  animation-name: disparition;
+  animation-duration: 3.2s;
+}
+
+@keyframes disparition {
+  0% {opacity:0;}
+  90% {opacity:0;}
+  100% {opacity:1;}
+}
+.t {
+  position:fixed;
+  top: 50%;
+  left: 60%;
+  animation-name: disparition;
+  animation-duration: 3.4s;
+  animation-delay: 0s;
+}
+
+@keyframes disparition {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+.f {
+  position:fixed;
+  top: 50%;
+  left: 63%;
+  animation-name: disparition;
+  animation-duration: 3.6s;
+  animation-delay: 0s;
+}
+
+@keyframes disparition {
+  0% {opacity:0;}
+  86% {opacity:0;}
+  100% {opacity:1;}
+}
+.ob {
+  position:fixed;
+  top: 50%;
+  left: 64%;
+  animation-name: disparition;
+  animation-duration: 3.7s;
+  animation-delay: 0s;
+}
+
+@keyframes disparition {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+.u {
+  position:fixed;
+  top:50%;
+  left:66%;
+  animation-name: disparition;
+  animation-duration: 3.8s;
+  animation-delay: 0s;
+}
+
+@keyframes disparition {
+  0% {opacity:0;}
+  86% {opacity:0;}
+  100% {opacity:1;}
+}
+.nb {
+  position:fixed;
+  top: 50%;
+  left: 68%;
+  animation-name: disparition;
+  animation-duration: 3.9s;
+  animation-delay: 0s;
+}
+
+@keyframes disparition {
+  0% {opacity:0;}
+  86% {opacity:0;}
+  100% {opacity:1;}
+}
+
+.d {
+  position:fixed;
+  top: 50%;
+  left: 70%;
+  animation-name: disparition;
+  animation-duration: 4s;
+  animation-delay: 0s;
+}
+
+@keyframes disparition {
+  0% {opacity:0;}
+  86% {opacity:0;}
+  100% {opacity:1;}
+}
+
+.sun {
+  position:fixed;
+  width: 300px;
+  height: 300px;
+  border-radius: 300px;
+  left: 30%;
+  background: radial-gradient(yellow,orange,OrangeRed);
+  z-index: -1;
+  transform:scaleY(0.8);
+}
+
+.sky {
+  position:fixed;
+  width: 100%;
+  height:29%;
+  background:radial-gradient(OrangeRed,OrangeRed,CornflowerBlue,CornflowerBlue);
+  z-index: -2;
+}
+
+.sable {
+  position:fixed;
+  width: 100%;
+  height: 71%;
+  background: radial-gradient(Moccasin,MistyRose,NavajoWhite);
+  bottom: 0;
+  z-index: -2;
+}
+
+.route {
+  position:fixed;
+  width: 3%;
+  height: 41%;
+  background:#966F33;
+  bottom:0;
+  left: 20%;
+  z-index: -1;
+}
+
+.panneau {
+  position:fixed;
+  width: 29%;
+  height: 10%;
+  bottom:40%;
+  left: 10%;
+  background:#966F33;
+  z-index: -1;
+}
+
+.return {
+  position:fixed;
+  width: 15%;
+  height: 5%;
+  bottom: 43%;
+  left: 15%;
+}
+
+a {
+  text-decoration: none;
+  color: #E6BF83;
+
+}
+a:hover {
+  color : #461F00;
+}

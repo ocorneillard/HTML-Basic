@@ -152,16 +152,14 @@ color: rgb(89,86,89);
   text-align: center;
 }
 
-.L {
-  background-color: rgb(83,132,153);
-  grid-area: 15 / 1 / 17 / 7;
-}
+
 
 
 .gridbot {
   display : grid;
-  position:relative;
+  position:absolute;
   grid-template: repeat(3, 1fr) / repeat(3, 1fr) ;
+  box-shadow: 10px, 10px, 5px;
 }
 
 .boxb {
@@ -169,13 +167,4 @@ color: rgb(89,86,89);
   text-align: inherit;
   border-radius: 10px;
   border : 2px solid;
-}
-
-/* Animation */
-
-@keyframes slidein {
-  from {opacity: 0;}
-  to {opacity:50%;}
-  from {left: -240px;}
-  to {left:0px;}
 }
